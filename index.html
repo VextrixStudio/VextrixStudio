@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" translate="yes" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="google" content="notranslate-icons"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jonatan A — UI & Web Developer</title>
+<meta name="description" content="Jonatan A · Vextrix Studio. UI & Web Developer based in Perris, California.">
+<link rel="icon" href="logo/v2.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo/v2.svg">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="ld-logo"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></div><div class="ld-name">JONATAN A</div><div class="ld-bar"><i id="ldbar"></i></div><div class="ld-num mono" id="ldnum">000</div></div>
+<div class="progress" id="progress"></div>
+<canvas id="dots"></canvas>
+<div class="orbs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lg" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/>
+    <feGaussianBlur in="n" stdDeviation="2" result="nb"/>
+    <feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div class="grain"></div>
+
+<div class="menubar mono" id="menubar">
+  <div class="mb-l"><span class="mb-apple"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span><b>Vextrix Studio</b><span data-go="#trabajo">Work</span><span data-go="#planes">Pricing</span><span data-go="#estudio">Studio</span><span id="mbDev">Dev</span></div>
+  <div class="mb-r"><span id="mbBatt" title="Battery"><span class="mi ">battery_5_bar</span><small id="mbPct"></small></span><span><span class="mi ">wifi</span></span><span id="mbSearch" title="Search (⌘K)"><span class="mi ">search</span></span><span id="mbDate"></span></div>
+</div>
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg><span>Jonatan A</span><em>/</em><small>Vextrix Studio</small></a>
+  <nav id="menu">
+    <a href="#ide">Live</a><a href="#trabajo">Work</a><a href="#sobre">About</a><a href="#servicios">Services</a><a href="#planes">Pricing</a><a href="#historia">Story</a><a href="#devadev">Dev to Dev</a><a href="#contacto">Contact</a>
+  </nav>
+  <div class="nav-r">
+    <button class="kbd-btn" id="openK" aria-label="Search"><span>Search…</span><kbd>⌘K</kbd></button>
+    <button class="icon" id="theme" aria-label="Theme"><span class="mi ">dark_mode</span></button>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <a href="#contacto" class="pill"><i class="pulse"></i> Available for new projects — 2026 <span>→</span></a>
+  <h1 class="split">Jonatan A</h1>
+  <p class="h-sub">Web interfaces that feel<br><span class="tw" id="rot"></span><span class="tcur"></span></p>
+  <p class="lead" id="bio">UI & Web developer focused on crafting clean, modern and functional digital experiences. User-centered design and an obsession with performance.</p>
+  <div class="cta">
+    <a href="#trabajo" class="btn primary magnetic">View my work</a>
+    <a href="https://github.com/VextrixStudio" target="_blank" class="btn magnetic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg> GitHub</a>
+  </div>
+  <div class="hero-meta">
+    <div><small>Location</small><b>Perris, CA</b></div><div><small>Coding since</small><b>2023</b></div>
+    <div><small>Local time</small><b id="clock">--:--</b></div>
+    <div><small>GitHub sync</small><b id="sync"><i class="pulse"></i> connecting…</b></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="track" id="track"></div></div>
+
+
+<!-- LIVE IDE -->
+<section id="ide">
+  <div class="sec-head reveal"><span class="eyebrow">00 — Live</span><h2>How I build<br>your project.</h2></div>
+  <div class="ide reveal" id="ideBox">
+    <button class="ide-cover" id="ideCover" type="button" aria-label="Play build demo">
+      <span class="play"><span class="mi f notranslate" translate="no" aria-hidden="true">play_arrow</span></span>
+      <b>Watch me build a project</b>
+      <small class="mono">Plan → Code → Build → Deploy · ~60s · click to play</small>
+    </button>
+    <div class="ide-top">
+      <div class="dots3"><i></i><i></i><i></i></div>
+      <div class="ide-title mono"><span id="ideProj">antonio-construction</span> — Visual Studio Code</div>
+      <div class="ide-who"><span class="av">JA</span><span id="ideStatus" class="mono">Jonatan is typing…</span></div>
+    </div>
+    <div class="ide-main">
+      <aside class="ide-side mono">
+        <div class="side-h">EXPLORER</div>
+        <ul id="ideTree"></ul>
+        <div class="side-h" style="margin-top:18px">STEPS</div>
+        <ol id="ideSteps" class="steps-list"><li>Plan</li><li>Components</li><li>Logic</li><li>Build</li><li>Deploy</li></ol>
+      </aside>
+      <div class="ide-center">
+        <div class="tabs mono" id="ideTabs"></div>
+        <div class="editor mono"><div class="gutter" translate="no" id="gutter"></div><pre id="code" translate="no"></pre></div>
+        <div class="term mono">
+          <div class="term-h"><span class="on">TERMINAL</span><span>PROBLEMS <b>0</b></span><span>OUTPUT</span></div>
+          <div id="term" translate="no"></div>
+        </div>
+      </div>
+      <div class="ide-prev">
+        <div class="prev-bar mono"><span id="prevUrl">localhost:3000</span><i id="prevDot"></i></div>
+        <div class="prev-body" id="prev"><div class="prev-empty mono">Waiting for build…</div></div>
+      </div>
+    </div>
+    <div class="ide-status mono"><span>⎇ main</span><span id="stLine">Ln 1, Col 1</span><span>TypeScript React</span><span>UTF-8</span><span id="stDeploy">▲ Vercel</span></div>
+  </div>
+  <div class="ide-ctrl reveal"><button class="btn primary" id="idePlay"><span class="mi f notranslate" translate="no" aria-hidden="true">play_arrow</span> Play</button><button class="btn" id="ideReplay"><span class="mi ">replay</span> Replay</button><button class="btn" id="ideSpeed"><span class="mi ">speed</span> <span id="spdT">Speed 1×</span></button><button class="btn" id="ideNext"><span class="mi ">skip_next</span> Next project</button><button class="btn" id="ideStop"><span class="mi f notranslate" translate="no" aria-hidden="true">stop</span> Stop</button></div>
+</section>
+
+<!-- WORK -->
+<section id="trabajo">
+  <div class="sec-head reveal"><span class="eyebrow">01 — Selected work</span><h2>Projects that<br>speak for themselves.</h2></div>
+  <div id="projects" class="projects"></div>
+</section>
+
+<!-- ABOUT / BENTO -->
+<section id="sobre">
+  <div class="sec-head reveal"><span class="eyebrow">02 — About</span><h2>Design with intent.<br>Code with precision.</h2></div>
+  <div class="bento">
+    <div class="b b-about reveal tilt">
+      <img id="avatar" src="https://avatars.githubusercontent.com/u/227630237?v=4" alt="Jonatan A" onerror="this.style.display='none'">
+      <h3>Hi, I'm Jonatan.</h3>
+      <p>I'm 16, I've been coding since 2023 and I'm the founder of <b>Vextrix Studio</b>. I build websites and web apps with TypeScript, caring about every detail: typography, spacing, micro-interactions and load speed. I believe the best interface is the one you don't notice.</p>
+    </div>
+    <div class="b b-stat reveal tilt"><span class="big" data-to="2" id="s-repos">0</span><small>Public projects</small></div>
+    <div class="b b-stat reveal tilt"><span class="big" data-to="99" id="s-ts">0</span><span class="big">%</span><small>TypeScript in my code</small></div>
+    <div class="b b-map reveal tilt">
+      <svg viewBox="0 0 200 120" class="globe"><defs><pattern id="p" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="currentColor"/></pattern></defs><circle cx="100" cy="60" r="56" fill="url(#p)" opacity=".35"/><circle cx="72" cy="48" r="4" fill="currentColor"/><circle cx="72" cy="48" r="10" fill="none" stroke="currentColor" class="ring"/></svg>
+      <small>Based in</small><b>Perris, California</b><span class="muted">Working remotely worldwide</span>
+    </div>
+    <div class="b b-code reveal tilt">
+<pre><code><span class="c">// jonatan.config.ts</span>
+<span class="k">export const</span> dev = {
+  name: <span class="s">"Jonatan A"</span>,
+  studio: <span class="s">"Vextrix Studio"</span>,
+  stack: [<span class="s">"TS"</span>, <span class="s">"React"</span>, <span class="s">"CSS"</span>],
+  focus: <span class="s">"UI · UX · Perf"</span>,
+  coffee: <span class="k">Infinity</span>,
+};</code></pre>
+    </div>
+    <div class="b b-since reveal tilt"><small>Commits · last 78 days</small><span class="big" id="s-commits">0</span><div class="contrib" id="contrib"></div></div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack">
+  <div class="sec-head reveal"><span class="eyebrow">03 — Stack</span><h2>Tools<br>I master.</h2></div>
+  <div class="stack-grid reveal" id="stackgrid"></div>
+  <div class="langs reveal"><div class="lh"><span>Languages across my repositories</span><span class="muted" id="bytes"></span></div><div class="bar" id="langbar"></div><ul id="langlist"></ul></div>
+</section>
+
+<!-- PROCESS -->
+<section id="proceso">
+  <div class="sec-head reveal"><span class="eyebrow">04 — Process</span><h2>How I work.</h2></div>
+  <div class="steps">
+    <div class="step reveal"><span>01</span><h4>Discover</h4><p>I understand your business, users and goals before writing a single line.</p></div>
+    <div class="step reveal"><span>02</span><h4>Design</h4><p>Wireframes and high-fidelity UI built on a consistent design system.</p></div>
+    <div class="step reveal"><span>03</span><h4>Build</h4><p>Clean TypeScript code — responsive, accessible and fast.</p></div>
+    <div class="step reveal"><span>04</span><h4>Launch</h4><p>Deploy, SEO, analytics and ongoing support after delivery.</p></div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="servicios">
+  <div class="sec-head reveal"><span class="eyebrow">— Services</span><h2>What I can<br>do for you.</h2></div>
+  <div class="svc-grid">
+    <div class="svc reveal tilt"><span class="mono n">01<span class="mi ">web</span></span><h4>Custom websites</h4><p>Business and corporate sites built with Next.js: fast, SEO-ready and designed to win clients.</p><ul><li>Custom design</li><li>Technical SEO</li><li>Domain + deploy</li></ul></div>
+    <div class="svc reveal tilt"><span class="mono n">02<span class="mi ">dashboard</span></span><h4>Full-stack web apps</h4><p>Apps with authentication, dashboards, databases and APIs. From idea to working product.</p><ul><li>Login &amp; accounts</li><li>Dashboards</li><li>APIs &amp; databases</li></ul></div>
+    <div class="svc reveal tilt"><span class="mono n">03<span class="mi ">rocket_launch</span></span><h4>Landing pages</h4><p>A single page built to convert: launches, local businesses, campaigns.</p><ul><li>Fast delivery</li><li>Direct WhatsApp / SMS</li><li>Animations</li></ul></div>
+    <div class="svc reveal tilt"><span class="mono n">04<span class="mi ">auto_fix_high</span></span><h4>UI / UX redesign</h4><p>I take your current site and make it modern, clean and easy to use.</p><ul><li>Audit</li><li>Design system</li><li>Better performance</li></ul></div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="como">
+  <div class="sec-head reveal"><span class="eyebrow">— How we work</span><h2>Simple, clear<br>and no surprises.</h2></div>
+  <div class="how">
+    <div class="how-l reveal">
+      <div class="how-item"><b>Direct communication</b><p>You talk to me, not a middleman. I reply in under 24 hours.</p></div>
+      <div class="how-item"><b>Live progress</b><p>I share a Vercel preview link so you can see progress every day.</p></div>
+      <div class="how-item"><b>Price agreed upfront</b><p>A clear quote before we start. No hidden costs.</p></div>
+      <div class="how-item"><b>Delivery &amp; support</b><p>You get the code, a configured domain and a walkthrough. Support after launch.</p></div>
+    </div>
+    <div class="how-r reveal">
+      <div class="tl-h mono">Typical delivery time</div>
+      <div class="gantt">
+        <div><span>Landing page</span><i style="--w:25%"></i><small>~1 week</small></div>
+        <div><span>Website</span><i style="--w:50%"></i><small>2–3 weeks</small></div>
+        <div><span>Redesign</span><i style="--w:40%"></i><small>~2 weeks</small></div>
+        <div><span>App full-stack</span><i style="--w:100%"></i><small>4–8 weeks</small></div>
+      </div>
+      <p class="muted small">Approximate timelines. They depend on each project's scope.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="historia">
+  <div class="sec-head reveal"><span class="eyebrow">— My story</span><h2>Building<br>since 2023.</h2></div>
+  <div class="story">
+    <div class="story-card reveal">
+      <div class="age"><span class="big" data-to="16">0</span><small>years old</small></div>
+      <p>I'm <b>16 years old</b>, a student, and I've been coding since <b>2023</b>. I started out of curiosity and today I ship real projects to real clients.</p>
+      <div class="goals">
+        <div><span class="mi ">military_tech</span><b>U.S. Marine</b><small>My future career: serving in the United States Marine Corps.</small></div>
+        <div><span class="mi ">code</span><b>Full-Stack Dev</b><small>Mastering frontend and backend, end to end.</small></div>
+        <div><span class="mi ">storefront</span><b>My own businesses</b><small>Building my own companies, starting with Vextrix Studio.</small></div>
+      </div>
+      <p class="muted small">Discipline, consistency and work done right: the values I bring to code and to life.</p>
+    </div>
+    <ol class="timeline" id="timeline">
+      <li class="reveal"><span class="mono">2023</span><b>First lines of code</b><p>HTML, CSS and JavaScript. Learning by building my own pages.</p></li>
+      <li class="reveal"><span class="mono">2024</span><b>React &amp; TypeScript</b><p>Moving to professional tools and more refined design.</p></li>
+      <li class="reveal"><span class="mono">2025</span><b>Vextrix Studio is born</b><p>I launch my studio and my GitHub. Next.js, Tailwind and Vercel become my stack.</p></li>
+      <li class="reveal"><span class="mono">2026</span><b>First clients</b><p>I deliver Antonio Enríquez Construction and launch Vellium, my own app.</p></li>
+      <li class="reveal future"><span class="mono">Next</span><b>Full-stack, Marines &amp; business</b><p>Backend, databases and serving my country.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DEV TO DEV -->
+<section id="devadev">
+  <div class="sec-head reveal"><span class="eyebrow">— Dev to Dev</span><h2>For developers<br>only.</h2></div>
+  <div class="dev-teaser reveal" id="openVS">
+    <div class="dt-l">
+      <span class="dt-badge mono">&lt;/&gt; devs only</span>
+      <h3>Open my VS Code.</h3>
+      <p>Not a client thing — this is for fellow developers. Step inside a replica of my editor and browse every extension, tool and setting I use daily, with how I actually use each one.</p>
+      <div class="dt-icons" id="dtIcons"></div>
+      <button class="btn primary magnetic" type="button">Launch VS Code →</button>
+    </div>
+    <div class="dt-r">
+      <div class="dt-win"><div class="dt-bar"><i></i><i></i><i></i></div>
+        <div class="dt-body"><div class="dt-act"><b></b><b class="on"></b><b></b><b></b></div><div class="dt-list" id="dtList"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VS CODE REPLICA -->
+<div class="vs" id="vs" aria-hidden="true">
+  <div class="vs-win">
+    <div class="vs-title">
+      <div class="dots3"><i class="c" id="vsClose" title="Close"></i><i></i><i></i></div>
+      <div class="vs-cmd mono"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>jonatan-setup</div>
+      <button class="vs-x" id="vsX" aria-label="Close">✕</button>
+    </div>
+    <div class="vs-main">
+      <nav class="vs-act" id="vsAct">
+        <button data-v="files" title="Explorer"><span class="mi ">description</span></button>
+        <button data-v="ext" class="on" title="Extensions"><span class="mi ">extension</span><span class="vs-count" id="vsCount">10</span></button>
+        <button data-v="tools" title="Tools"><span class="mi ">handyman</span></button>
+        <button data-v="tips" title="Tips"><span class="mi ">lightbulb</span></button>
+        <div class="sp"></div>
+        <button data-v="settings" title="settings.json"><span class="mi ">settings</span></button>
+      </nav>
+      <aside class="vs-side">
+        <div class="vs-side-h mono" id="vsSideH">EXTENSIONS: INSTALLED</div>
+        <div class="vs-search"><input id="vsQ" placeholder="Search Extensions in Marketplace" autocomplete="off"></div>
+        <div class="vs-list" id="vsList"></div>
+      </aside>
+      <div class="vs-editor">
+        <div class="vs-tabs mono" id="vsTabs"></div>
+        <div class="vs-page" id="vsPage"></div>
+      </div>
+    </div>
+    <div class="vs-status mono"><span>⎇ main</span><span>⊗ 0 ⚠ 0</span><span id="vsStat">10 extensions installed</span><span class="r">Vesper</span><span>Geist Mono</span><span>{ } TypeScript React</span></div>
+  </div>
+</div>
+
+<!-- STUDIO -->
+<section id="estudio">
+  <div class="sec-head reveal"><span class="eyebrow">— The Studio</span><h2>Vextrix<br>Studio.</h2></div>
+  <div class="studio">
+    <div class="st-brand reveal">
+      <div class="st-logo"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></div>
+      <p class="st-lead">A one-person digital studio from <b>Perris, California</b>. Founded by Jonatan A, we design and build websites and web apps that look premium and load instantly.</p>
+      <div class="st-vals">
+        <div><b>Precision</b><span>Every pixel, every millisecond.</span></div>
+        <div><b>Clarity</b><span>Simple interfaces, honest pricing.</span></div>
+        <div><b>Discipline</b><span>Deadlines kept. Code that lasts.</span></div>
+      </div>
+    </div>
+    <div class="st-facts reveal">
+      <div><span class="big" data-to="2023">0</span><small>Coding since</small></div>
+      <div><span class="big" data-to="24">0</span><span class="big">h</span><small>Max reply time</small></div>
+      <div><span class="big" data-to="100">0</span><span class="big">%</span><small>Code ownership for clients</small></div>
+      <div><span class="big">EN/ES</span><small>Bilingual support</small></div>
+    </div>
+    <div class="st-mark reveal">
+      <h4>About the logo</h4>
+      <p>The <b>V</b> is built from two solid slabs meeting at one point — structure and precision. The small block at its foot is a <b>blinking text cursor</b>: the studio is always building. One color, pure geometry, readable from a 16px favicon to a billboard.</p>
+      <div class="st-sizes"><span style="width:64px;height:64px"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span><span style="width:40px;height:40px"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span><span style="width:24px;height:24px"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span><span style="width:16px;height:16px"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span><span class="inv" style="width:40px;height:40px"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="planes">
+  <div class="sec-head reveal"><span class="eyebrow">— Pricing</span><h2>Plans for<br>every project.</h2></div>
+  <div class="seg reveal" id="planSeg"><span class="seg-pill"></span><button class="on" data-p="web">Websites</button><button data-p="app">Web apps</button><button data-p="care">Care plans</button></div>
+  <div class="plans" id="plans"></div>
+  <p class="price-note reveal">Fair, transparent pricing — prices are built from real hours of work. No hidden fees, 50% to start, 50% on delivery.</p>
+  <div class="calc reveal">
+    <div class="calc-l"><h4>Estimate your project</h4><p class="muted small">Pick what you need — the estimate updates live.</p><div id="calcOpts"></div></div>
+    <div class="calc-r"><small class="mono">ESTIMATED STARTING PRICE</small><div class="calc-price"><span>$</span><b id="calcTotal">0</b></div><small class="muted" id="calcTime"></small><button class="btn primary magnetic" id="calcSend">Send this estimate →</button><p class="muted small">Final price confirmed after a free call. No payment upfront to talk.</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="sec-head reveal"><span class="eyebrow">— FAQ</span><h2>Frequently<br>asked questions.</h2></div>
+  <div class="faq" id="faqList"></div>
+</section>
+
+<!-- ACTIVITY -->
+<section id="actividad">
+  <div class="sec-head reveal"><span class="eyebrow">05 — Activity</span><h2>Latest commits.</h2></div>
+  <div class="terminal reveal">
+    <div class="t-bar"><i></i><i></i><i></i><span>~/VextrixStudio — git log</span></div>
+    <div id="events" class="t-body"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto" class="contact reveal">
+  <span class="eyebrow">06 — Contact</span>
+  <h2 class="huge">Let's build something<br><span class="outline">incredible.</span></h2>
+  <div class="mail-box">
+    <a href="mailto:vextrixstudio@outlook.com?subject=Project%20inquiry" class="mail mono">vextrixstudio@outlook.com</a>
+    <button class="btn" id="copyMail" type="button"><span class="mi ">content_copy</span> Copy</button>
+  </div>
+  <form id="form">
+    <input type="text" name="_honey" style="display:none">
+    <div class="row"><input required placeholder="Name" name="name"><input required type="email" placeholder="Your email" name="email"></div>
+    <div class="chips-sel" id="topics"><button type="button" class="on">Website</button><button type="button">Web app</button><button type="button">UI redesign</button><button type="button">Landing page</button><button type="button">Other</button></div>
+    <textarea required placeholder="Tell me about your project…" name="message" rows="4" maxlength="1500" id="msg"></textarea>
+    <div class="f-foot mono"><span id="cnt">0 / 1500</span><span>Reply in &lt; 24 h</span></div>
+    <button class="btn primary magnetic" id="sendBtn">Send message →</button>
+  </form>
+  <div class="socials">
+    <a href="https://github.com/VextrixStudio" target="_blank"><small>GitHub</small><b>@VextrixStudio</b><span>↗</span></a>
+    <a href="https://github.com/NaruLuci" target="_blank"><small>GitHub</small><b>@NaruLuci</b><span>↗</span></a>
+    <a href="https://bsky.app/profile/naruluci.bsky.social" target="_blank"><small>Bluesky</small><b>@naruluci</b><span>↗</span></a>
+    <a href="https://vercel.com/naruluciteam" target="_blank"><small>Vercel</small><b>naruluciteam</b><span>↗</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f-top"><span class="big-name">JONATAN A</span></div><div class="f-brand"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg><span>Vextrix Studio — Built with precision in Perris, CA.</span></div>
+  <div class="f-bot"><span>© <span id="year"></span> Jonatan A · Vextrix Studio</span><span class="status"><i class="pulse"></i> All systems operational</span><a href="https://github.com/VextrixStudio" target="_blank">github.com/VextrixStudio ↗</a></div>
+</footer>
+
+<!-- Command palette -->
+<div class="cmdk" id="cmdk"><div class="cmdk-box">
+  <input id="cmdkIn" placeholder="Type a command or search…" autocomplete="off">
+  <ul id="cmdkList"></ul>
+  <div class="cmdk-foot"><span><kbd>↑↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>
+</div></div>
+<div class="keys" id="keys"><div class="keys-box"><h4>Keyboard shortcuts</h4><ul>
+<li><span>Search / commands</span><kbd>⌘K</kbd></li><li><span>Toggle theme</span><kbd>T</kbd></li><li><span>Go to work</span><kbd>1</kbd></li><li><span>Go to about</span><kbd>2</kbd></li><li><span>Go to contact</span><kbd>C</kbd></li><li><span>Copy email</span><kbd>E</kbd></li><li><span>Back to top</span><kbd>U</kbd></li><li><span>Show shortcuts</span><kbd>?</kbd></li></ul></div></div>
+<div class="dock" id="dock" role="navigation" aria-label="Dock">
+  <a data-go="#inicio" data-l="Home"><span class="mi ">home</span></a>
+  <a data-go="#trabajo" data-l="Work"><span class="mi ">business_center</span></a>
+  <a data-go="#planes" data-l="Pricing"><span class="mi ">sell</span></a>
+  <a data-go="#estudio" data-l="Studio" class="dk-logo"><svg translate="no" class="vx-logo notranslate" viewBox="0 0 120 120" aria-label="Vextrix Studio"><rect width="120" height="120" rx="27" fill="currentColor"/><path d="M24 30h19l17 38 17-38h19L69 90H51z" fill="var(--bg)"/><rect x="82" y="80" width="14" height="10" rx="2" fill="var(--bg)" class="vx-caret"/></svg></a>
+  <a data-act="vs" data-l="Dev to Dev · VS Code"><span class="mi ">terminal</span></a>
+  <a data-act="cmdk" data-l="Search ⌘K"><span class="mi ">search</span></a>
+  <i class="dk-sep"></i>
+  <a data-act="theme" data-l="Theme"><span class="mi ">dark_mode</span></a>
+  <a data-go="#contacto" data-l="Contact"><span class="mi ">mail</span></a>
+</div>
+<button class="top-btn" id="topBtn" aria-label="Back to top"><span class="mi ">arrow_upward</span></button>
+<div class="cursor" id="cursor"></div>
+<div class="toast" id="toast"></div>
+<script src="icons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
