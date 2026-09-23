@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/VextrixStudio/VextrixStudio/blob/main/new.png" width="120" alt="Vextrix Studio logo" />
+<img src="https://raw.githubusercontent.com/VextrixStudio/VextrixStudio/main/new.png" width="120" alt="Vextrix Studio logo" />
 
 # Hi, I'm Jonatan A 👋
 
@@ -51,8 +51,10 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=VextrixStudio&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=ffffff&text_color=a3a3a3&icon_color=ffffff" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VextrixStudio&layout=compact&hide_border=true&bg_color=0d0d0d&title_color=ffffff&text_color=a3a3a3" alt="Top languages" />
+<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VextrixStudio&theme=github_dark" alt="GitHub stats" />
+<img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VextrixStudio&theme=github_dark" alt="Top languages" />
+<br/>
+<img src="https://streak-stats.demolab.com?user=VextrixStudio&theme=dark&hide_border=true&background=0D1117" alt="GitHub streak" />
 
 </div>
 
