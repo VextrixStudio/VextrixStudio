@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/VextrixStudio/VextrixStudio/main/new.png" width="120" alt="Vextrix Studio logo" />
+<img src="https://raw.githubusercontent.com/VextrixStudio/VextrixStudio/main/logo.png" width="120" alt="Vextrix Studio logo" />
 
 # Hi, I'm Jonatan A 👋
 
