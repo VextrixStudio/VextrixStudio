@@ -24,7 +24,7 @@
 
 ### 🌐 Portfolio
 
-> **[→ Visit my portfolio](https://YOUR-PORTFOLIO-URL.vercel.app)**
+> **[→ Visit my portfolio](https://vextrixstudio.vercel.app/)**
 >
 > Services, pricing, live projects, and a peek at how I build.
 
